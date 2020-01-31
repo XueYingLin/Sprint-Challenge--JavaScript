@@ -30,13 +30,40 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+A: with forEach, return is optional, and the return elements pop out one by one,
+    With map, the return is a new array.
+
 2. What is the difference between a function and a method?
+
+A: method is a function inside an object.
+
 
 3. What is closure?
 
+A: Scope
+
 4. Describe the four rules of the 'this' keyword.
 
+A: refer to the object’s context
+. Window Binding - if none of the other rules apply "this" default to the window - unless you are in strict mode in which case it returns undefined 
+.Implicit binding 
+ most common rule - found in about 80% of use cases
+ when the function is invoked - look the left of the dot and that's what "this" refers to
+only applies to objects with methods
+. Explicit Binding
+Call - will immediately invoke the function/ .call passes in arguments one by one
+Apply - will immediately invoke the function / .apply we pass in arguments as an array
+Bind - you pass in arguments one by one but it does not immediately invoke the function. It returns a brand new function that can be invoked later
+all of the above allow us to explicitly state what the "this" keyword refers to
+. Prototypes + Constructor Functions
+constructor functions construct other objects - that's their life's purpose
+ this keyword
+missing a return statement 
+Captialized Function Name - you will want to use the new keyword with a constructor 
+
 5. Why do we need super() in an extended class?
+
+A: super ad extends do what the .call and .create do.
 
 ## Project Set up
 
